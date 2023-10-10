@@ -2,6 +2,9 @@ package net.gurknathe.somecreatures;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.gurknathe.somecreatures.entity.ModEntities;
+import net.gurknathe.somecreatures.entity.custom.PorcupineEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +14,7 @@ public class SomeCreatures implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		FabricDefaultAttributeRegistry.register(ModEntities.PORCUPINE, PorcupineEntity.createAttributes());
 		LOGGER.info("Hello Fabric world!");
 	}
 }
