@@ -71,6 +71,7 @@ public class PorcupineEntity extends AnimalEntity {
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 2);
     }
 
+    // Breeding stuff
     @Override
     public boolean isBreedingItem(ItemStack stack) {
         return stack.isOf(Items.BEETROOT);
@@ -82,6 +83,7 @@ public class PorcupineEntity extends AnimalEntity {
         return ModEntities.PORCUPINE.create(world);
     }
 
+    // Sounds
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource source) {

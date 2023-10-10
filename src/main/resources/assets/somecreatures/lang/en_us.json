@@ -1,3 +1,4 @@
 {
-  "item.somecreatures.porcupine_spawn_egg": "Porcupine Spawn Egg"
+  "item.somecreatures.porcupine_spawn_egg": "Porcupine Spawn Egg",
+  "itemgroup.somecreatures": "Some Creatures"
 }
